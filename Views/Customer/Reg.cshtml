@@ -1,0 +1,19 @@
+@model OnlineBankingWeb.Models.Customer
+
+<h2>Register New Customer</h2>
+
+<form asp-action="Register" method="post">
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" />
+    </div>
+    <div>
+        <label>Email</label>
+        <input asp-for="Email" type="email" />
+    </div>
+    <div>
+        <label>Password</label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <button type="submit">Register</button>
+</form>

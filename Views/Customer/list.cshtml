@@ -1,0 +1,21 @@
+@model IEnumerable<OnlineBankingWeb.Models.Customer>
+
+<h2>Customer List</h2>
+
+<table border="1" cellpadding="5">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td>@c.Id</td>
+            <td>@c.Name</td>
+            <td>@c.Email</td>
+        </tr>
+    }
+</table>
+
+<a asp-action="Register">Register New Customer</a>
